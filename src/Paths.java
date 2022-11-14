@@ -14,6 +14,17 @@ public class Paths {
     }
     public void setPath(int choice){
         path = choice;
-        pathIS =
+        if (choice == 151){
+            pathIS = "b";
+        }
+        if (choice == 152){
+            pathIS = "c";
+        }
+        if (choice == 601){
+            pathIS = "d";
+        }
+        if (choice == 602){
+            pathIS = "e";
+        }
     }
 }

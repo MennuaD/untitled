@@ -2,11 +2,11 @@ import java.util.Scanner;
 import java.io.*;
 
 public class BoardGame {
-   static int b = 15;
-   static int c = 15;
+   static int b = 151;
+   static int c = 152;
    static int d = 25;
-   static int e = 60;
-   static int f = 60;
+   static int e = 601;
+   static int f = 602;
    static int g = 40;
 
     public static final String ANSI_RESET = "\u001B[0m";
