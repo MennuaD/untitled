@@ -2,6 +2,13 @@ import java.util.Scanner;
 import java.io.*;
 
 public class BoardGame {
+   static int b = 15;
+   static int c = 15;
+   static int d = 25;
+   static int e = 60;
+   static int f = 60;
+   static int g = 40;
+
     public static final String ANSI_RESET = "\u001B[0m";
 
     // Declaring the color
@@ -16,9 +23,13 @@ public class BoardGame {
         Scanner s = new Scanner(System.in);
         System.out.println("Welcome");
         BoardGameLogicP1 use1 = new BoardGameLogicP1();
-        for (int i = 0; i < 100; i ++){
+        for (int i = 0; i < 20; i ++){
             System.out.println(use1.player1Turn());
         }
+Paths player1 = new Paths("Mennua");
+        System.out.println(player1.getPath());
+        player1.setPath(b);
+        System.out.println(player1.getPath());
 
     }
 }

@@ -1,4 +1,7 @@
 public class BoardGameLogicP1 {
+
+
+
     public BoardGameLogicP1(){
 
     }
