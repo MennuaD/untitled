@@ -1,8 +1,8 @@
-public class BoardGameLogicP1 {
+public class P1Run {
 
 
 
-    public BoardGameLogicP1(){
+    public P1Run(){
 
     }
 

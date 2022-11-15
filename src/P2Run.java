@@ -1,5 +1,5 @@
-public class BoardGameLogicP2 {
-    public BoardGameLogicP2(){
+public class P2Run {
+    public P2Run(){
 
     }
 
