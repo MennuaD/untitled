@@ -5,7 +5,7 @@ public class Paths {
     private String pathIS;
     String convert;
     int a = 30;
-
+    public Paths(){}
     public Paths(String player){
         name = player;
         path = a;
@@ -35,6 +35,9 @@ public class Paths {
 
 
     public int moveUp() { return  (1 + (int) (Math.random()* 5)); }
+
+    public int turn(){ return (1 + (int) (Math.random()* 6)); }
     public int moveDown() { return (-1 * (1 + (int) (Math.random() * 4))); }
     public int moveDown2() { return (-1 * (1 + (int) (Math.random()* 5))); }
+    public int moveDown3() { return -3; }
 }
