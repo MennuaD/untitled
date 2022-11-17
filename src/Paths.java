@@ -16,6 +16,7 @@ public class Paths {
         return path;
     }
     public String getPathname(){ return pathIS; }
+    public String getName() { return name;}
     public void setPath(int choice){
         convert = ("" + choice);
         path = Integer.parseInt(convert.substring(0,2));

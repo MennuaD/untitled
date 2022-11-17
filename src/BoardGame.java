@@ -8,6 +8,7 @@ public class BoardGame {
    static int f = 602;
    static int g = 40;
 
+
     public static final String ANSI_RESET = "\u001B[0m";
 
     // Declaring the color
@@ -17,19 +18,31 @@ public class BoardGame {
 
     // Main driver method
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        Paths use = new Paths();
-        Paths player1 = new Paths("Mennua");
-        PRun p1 = new PRun();
+        String responseCheck;
         System.out.print(llll);
         System.out.print(rrrr);
+        Scanner s = new Scanner(System.in);
+        Paths use = new Paths();
+        System.out.println("Enter the first player's name: ");
+        Paths player1 = new Paths(s.nextLine());
+        System.out.println("Enter the second player's name: ");
+        Paths player2 = new Paths(s.nextLine());
+        PRun p1 = new PRun();
+
         p1.setProgress(use.turn());
         System.out.println(p1.getProgress());
-        System.out.println("Welcome");
+        System.out.println("Welcome " + player1.getName() + " and " + player2.getName() + "!");
+        System.out.println("When responding to questions, please enter what is inside the quote marks.");
 
-        for (int i = 0; i < 20; i ++){
-            System.out.println(use.turn());
+        System.out.println(" It is the first player's turn." );
+        System.out.println("Would you like to use a power up? \n Enter \"yes\" to pick one to use: ");
+        responseCheck = s.nextLine();
+        if (responseCheck.equals("yes")) {
+            System.out.println("Would you like to use \"Debuff Cancel\", \"Advance\", or \"Move Forward\" ");
+            responseCheck = s.nextLine();
+            if (responseCheck.equals("Debuff Cancel"));
         }
+
 
         System.out.println(player1.getPath());
         System.out.println(player1.getPathname());
@@ -85,9 +98,7 @@ public class BoardGame {
         if ((player1.getPathname()).equals("e") && p1.getProgress() = ){}
         if ((player1.getPathname()).equals("e") && p1.getProgress() = ){}
 
-
-
-         */
+ */
 
     }
 }

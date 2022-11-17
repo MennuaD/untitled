@@ -1,7 +1,7 @@
 public class PRun {
 private int progressP;
 private int debuffCancel;
-private int swapPlace;
+private int Advance;
 private int moveForward;
 
 
