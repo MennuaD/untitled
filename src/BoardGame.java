@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BoardGame {
+public class Main {
    static int b = 151;
    static int c = 152;
    static int d = 25;
@@ -19,6 +19,7 @@ public class BoardGame {
     // Main driver method
     public static void main(String[] args) {
         String responseCheck;
+        int i = 0;
         System.out.print(llll);
         System.out.print(rrrr);
         Scanner s = new Scanner(System.in);
@@ -31,9 +32,31 @@ public class BoardGame {
 
         p1.setProgress(use.turn());
         System.out.println(p1.getProgress());
-        System.out.println("Welcome " + player1.getName() + " and " + player2.getName() + "!");
-        System.out.println("When responding to questions, please enter what is inside the quote marks.");
+        System.out.println("Welcome to The Board Game" + player1.getName() + " and " + player2.getName() + "!");
+        System.out.println("First, when responding to questions, please enter exactly what is inside the quote marks.");
+while (i <1){
+System.out.println("Please enter \"ok\" to continue.");
+responseCheck = s.nextLine();
+if (responseCheck.equals("ok")){
+i = 2;
+}
+}
+i = 0;
 
+System.out.println("Secondly, there are sevaral paths to choose from: \nA>B>D, A>B>E, A>C>F, and A>C>G.");
+System.out.println("      D");
+System.out.println("   B--^>E   F ");   
+System.out.println("A--^>C------^>G");
+      
+while (i <1){
+System.out.println("Please enter \"ok\" to continue.");
+responseCheck = s.nextLine();
+if (responseCheck.equals("ok")){
+i = 2;
+}
+}
+i = 0;
+System.out.println("Lastly, there are three power ups you can use in this game. They are Debuff Cancel(Ignores a single \"move back\" block <Common>), Advance(Moves to the beginning of the opposite player's path <Very Rare>), and Move Forward(Moves forward two steps <Common>).");
         System.out.println(" It is the first player's turn." );
         System.out.println("Would you like to use a power up? \n Enter \"yes\" to pick one to use: ");
         responseCheck = s.nextLine();
